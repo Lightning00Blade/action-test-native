@@ -1,0 +1,12 @@
+on:
+  pull_request:
+    paths:
+      - 'website/**'
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    name: Try native
+    steps:
+      - name: Test Step
+        run: echo "It works"

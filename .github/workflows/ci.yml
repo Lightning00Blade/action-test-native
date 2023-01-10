@@ -1,0 +1,19 @@
+on:
+  pull_request:
+    paths:
+      - 'packages/**'
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    name: Try native
+    steps:
+      - name: Test Step
+        run: echo "It works"
+
+  required:
+    runs-on: ubuntu-latest
+    name: Try native
+    steps:
+      - name: Test Step
+        run: echo "It works"
