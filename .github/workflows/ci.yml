@@ -17,3 +17,15 @@ jobs:
     steps:
       - name: Test Step
         run: echo "It works"
+
+  required-matrix:
+    runs-on: ubuntu-latest
+    name: Required ${{ matrix.suite }}
+    strategy:
+      matrix:
+        suite:
+          - new
+          - old
+    steps:
+      - name: Test Step
+        run: echo "It works"
