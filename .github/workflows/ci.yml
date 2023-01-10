@@ -13,7 +13,7 @@ jobs:
 
   required:
     runs-on: ubuntu-latest
-    name: Try native
+    name: Required
     steps:
       - name: Test Step
         run: echo "It works"
