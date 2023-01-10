@@ -1,12 +1,13 @@
 on:
   pull_request:
     paths:
-      - 'website/**'
+      - 'website/**' # Need to be kept in sync manually
+      - 'dependent/**'
 
 jobs:
   ci:
     runs-on: ubuntu-latest
-    name: Name that needs to Match
+    name: Required # Name that needs to Match
     steps:
       - name: Test Step
         run: echo "It works"
